@@ -26,14 +26,14 @@ async function connectToDatabase(req: NextApiRequest, res: NextApiResponse) {
 
       const playersStats = rows.map(
         (row: {
-          id: any
-          name: any
-          at_bats: any
-          hits: any
-          home_runs: any
-          doubles: any
-          triples: any
-          avg: any
+          id: number
+          name: string
+          at_bats: number
+          hits: number
+          home_runs: number
+          doubles: number
+          triples: number
+          avg: number
         }) => ({
           id: row.id,
           name: row.name,
