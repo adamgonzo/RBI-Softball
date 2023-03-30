@@ -86,7 +86,7 @@ async function connectToDatabase(req: NextApiRequest, res: NextApiResponse) {
     }
 
     return connection
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error connecting to PlanetScale:', error.message)
     process.exit(1)
   }
