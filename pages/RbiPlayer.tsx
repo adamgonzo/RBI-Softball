@@ -1,5 +1,4 @@
 'use client'
-
 import { useState, useEffect } from 'react'
 import Modal from '@/components/modal'
 import axios from 'axios'
