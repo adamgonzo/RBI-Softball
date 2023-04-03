@@ -9,11 +9,11 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
 
-  --primary-glow: conic-gradient(
+  /* --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
     #0885ff33 55deg,
@@ -36,12 +36,12 @@
     #00000010,
     #00000010,
     #00000080
-  );
+  ); */
 
-  --callout-rgb: 238, 240, 241;
+  /* --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+  --card-border-rgb: 131, 134, 135; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -75,6 +75,18 @@
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
+}
+
+.css-3d-text {
+  @apply text-[60px] text-[#1188b0];
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-shadow: 0px 0px 0 rgb(10, 129, 169), 0px 1px 0 rgb(3, 122, 162),
+    0px 2px 0 rgb(-4, 115, 155), 0px 3px 0 rgb(-11, 108, 148),
+    0px 4px 0 rgb(-19, 100, 140), 0px 5px 0 rgb(-26, 93, 133),
+    0px 6px 0 rgb(-33, 86, 126), 0px 7px 0 rgb(-40, 79, 119),
+    0px 8px 0 rgb(-47, 72, 112), 0px 9px 0 rgb(-54, 65, 105),
+    0px 10px 9px rgba(31, 15, 15, 0.43), 0px 10px 1px rgba(31, 15, 15, 0.5),
+    0px 0px 9px rgba(31, 15, 15, 0.2);
 }
 
 * {
