@@ -269,9 +269,9 @@ const StatsTable = () => {
         {playersStats.map((playerStats: any) => (
           <div
             key={playerStats.name}
-            className="border-2 border-black rounded-md shadow-sm hover:shadow-md text-center"
+            className="border-2 border-black rounded-md shadow-sm hover:shadow-md text-center p-2 dark:border-green-400"
           >
-            <div className="bg-gray-100 px-4 py-2 rounded-t-md">
+            <div className="bg-gray-300 px-4 py-2 rounded-t-md">
               <h3 className="text-lg font-medium dark:text-black">{playerStats.name}</h3>
             </div>
             <div className="grid grid-cols-2 gap-2 px-4 py-2">
