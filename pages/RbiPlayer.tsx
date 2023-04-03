@@ -376,7 +376,7 @@ const StatsTable = () => {
       </div>
       {isModalOpen && (
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-          <h2 className="text-lg font-medium mb-4">Edit Player Stats</h2>
+          <h2 className="text-lg font-medium mb-4 text-black">Edit Stats For → {selectedPlayer.name}</h2>
           <form
             onSubmit={e => {
               e.preventDefault()
