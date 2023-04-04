@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from 'next'
 
 async function connectToDatabase(req: NextApiRequest, res: NextApiResponse) {
   try {
-    const connection = await mysql.createPool({
+ A softball website that uses plantscale database to keep track of stats for current softball league   const connection = await mysql.createPool({
       connectionLimit: 10,
       host: process.env.NEXT_PUBLIC_DATABASE_HOST,
       user: process.env.NEXT_PUBLIC_DATABASE_USERNAME,
@@ -47,7 +47,6 @@ async function connectToDatabase(req: NextApiRequest, res: NextApiResponse) {
       )
 
       res.status(200).json(playersStats)
-      console.log('Connected to PlanetScale!')
     } else if (req.method === 'POST') {
       // Add new player stats
       const { playerId, atBats, hits, homeRuns, doubles, triples } = req.body
@@ -62,7 +61,6 @@ async function connectToDatabase(req: NextApiRequest, res: NextApiResponse) {
       )
 
       res.status(200).json(result)
-      console.log('Added new stats:', result)
     } else if (req.method === 'PUT') {
       // Update existing player stats
       const { id, atBats, hits, homeRuns, doubles, triples } = req.body
@@ -78,7 +76,6 @@ async function connectToDatabase(req: NextApiRequest, res: NextApiResponse) {
       )
 
       res.status(200).json(result)
-      console.log('Updated stats:', result)
     } else {
       // Unsupported request method
       res.status(405).json({ message: 'Method not allowed' })
