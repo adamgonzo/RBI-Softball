@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from 'next'
 
 async function connectToDatabase(req: NextApiRequest, res: NextApiResponse) {
   try {
-    const connection = await mysql.createPool({
+ A softball website that uses plantscale database to keep track of stats for current softball league   const connection = await mysql.createPool({
       connectionLimit: 10,
       host: process.env.NEXT_PUBLIC_DATABASE_HOST,
       user: process.env.NEXT_PUBLIC_DATABASE_USERNAME,
