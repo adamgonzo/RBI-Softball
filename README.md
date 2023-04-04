@@ -24,6 +24,14 @@ npm install
 Next, you will need to create a `.env` file and set the following environment variables:
 
 ```
+DATABASE_URL=your_plantscale_database_url
+SESSION_SECRET=your_session_secret_key
+```
+
+Finally, run the following command to start the application:
+
+
+```
 npm start
 
 ```
